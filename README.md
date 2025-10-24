@@ -1,7 +1,7 @@
 # About
 This repo implements simple HTTP 1.0 client and server with Linux TCP socket
 
-The server will try to dispatch requests and only processes HTTP 1.0 GET method for `/[number]` url. The response is a HTML text with collatz sequence starting from [number]
+The server will try to dispatch requests and only processes HTTP 1.0 GET method for `/[number]` url. The response is a HTML text with collatz sequence starting from `[number]`
 
 The client sends requests and benchmark average delay
 

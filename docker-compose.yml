@@ -1,0 +1,15 @@
+services:
+    myserver:
+        build: server
+        container_name: myserver
+        ports:
+            - 8082:8082
+        restart: always
+    myclient:
+        build: client
+        container_name: myclient
+        network_mode: host
+        restart: always
+        depends_on:
+            true-server:
+                condition: service_started
